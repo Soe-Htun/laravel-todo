@@ -32,7 +32,7 @@
         <td>{{ $task->title }}</td>
         <td>{{ Str::limit($task->description, 80) }}</td>
         <td>{{ $task->created_at->diffForHumans() }}</td>
-        <td>
+        <td class="d-flex align-items-center gap-2">
           <a href="{{ route('tasks.edit', $task) }}" class="btn btn-sm btn-warning">Edit</a>
           <form action="{{ route('tasks.destroy', $task) }}" method="POST" style="display:inline" onsubmit="return confirm('Delete this task?')">
             @csrf
