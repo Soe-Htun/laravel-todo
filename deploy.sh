@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-set -e
-
 APP_DIR=/var/www/laravel-app
 
 echo "🚀 Starting Laravel deployment..."
